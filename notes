@@ -1,0 +1,13 @@
+npx tsc --init  // initilazing typescript project
+npm install helmet express cors pg
+
+
+npm i ts-node-dev typescript @types/helmet @types/cors -D
+
+
+//ts-node-dev is like nodemon, but i guess we must add --respawn
+
+i need to read more about --transpile-only
+
+mkdir src; cd src
+echo > server.ts
