@@ -8,10 +8,10 @@ const app = express();
 app.use(express.json())
 app.use(helmet())
 
-const port = 8500;
+const port = process.env.HOST_PORT || 8501;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get('/api', (req, res) => {
+  res.send('Hello World 5555');
 });
 
 app.listen(port, () => {
